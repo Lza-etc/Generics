@@ -7,7 +7,6 @@ class Program
     {
         GenericStack<int> stack = new();
         char choice;
-
         do
         {
             Console.WriteLine("Generic Stack Operations");

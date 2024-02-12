@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elsamj\\source\\repos\\Generics\\Generics\\Generics.csproj": {}
+    "C:\\Users\\elsamj\\source\\repos\\Generic\\Generics\\Generics\\Generics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elsamj\\source\\repos\\Generics\\Generics\\Generics.csproj": {
+    "C:\\Users\\elsamj\\source\\repos\\Generic\\Generics\\Generics\\Generics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elsamj\\source\\repos\\Generics\\Generics\\Generics.csproj",
+        "projectUniqueName": "C:\\Users\\elsamj\\source\\repos\\Generic\\Generics\\Generics\\Generics.csproj",
         "projectName": "Generics",
-        "projectPath": "C:\\Users\\elsamj\\source\\repos\\Generics\\Generics\\Generics.csproj",
+        "projectPath": "C:\\Users\\elsamj\\source\\repos\\Generic\\Generics\\Generics\\Generics.csproj",
         "packagesPath": "C:\\Users\\elsamj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elsamj\\source\\repos\\Generics\\Generics\\obj\\",
+        "outputPath": "C:\\Users\\elsamj\\source\\repos\\Generic\\Generics\\Generics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
