@@ -3,19 +3,25 @@ using System;
 
 class Program
 {
+    static void DisplayMenu()
+    {
+        Console.WriteLine("\nGeneric Stack Operations");
+        Console.Write("1.Push");
+        Console.Write("    2.Pop");
+        Console.Write("    3.Peek");
+        Console.Write("    4.IsEmpty");
+        Console.WriteLine("   5.Exit");
+    }
     static void Main()
     {
-        GenericStack<int> stack = new();
+        Console.Write("Enter the stack size: ");
+        int size=Convert.ToInt32(Console.ReadLine());
+        GenericStack<int> stack = new(size);
         char choice;
         do
         {
-            Console.WriteLine("Generic Stack Operations");
-            Console.WriteLine("1.Push");
-            Console.WriteLine("2.Pop");
-            Console.WriteLine("3.Peek");
-            Console.WriteLine("4.IsEmpty");
-            Console.WriteLine("5.Exit");
-            Console.WriteLine("Enter your choice");
+            DisplayMenu();
+            Console.Write("Enter your choice: ");
             choice = Console.ReadKey().KeyChar;
             Console.WriteLine();
 

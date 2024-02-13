@@ -8,28 +8,41 @@ namespace Generics
 {
     internal class GenericStack<T> where T : struct
     {
-        readonly List<T> stack = new();
+        readonly T[]  stack;
+        private int top = 0;
+
+        public GenericStack(int size)
+        {
+            stack = new T[size];
+        }
         public void Push(T item)
         {
+            if (IsFull())
+                throw new InvalidOperationException("The stack is full.");
+
             if (!typeof(T).IsValueType)
                 throw new InvalidOperationException("Only value types are allowed.");
-            stack.Add(item);
+            stack[top++] = item;
         }
         public void Pop()
         {
             if (IsEmpty())
                 throw new InvalidOperationException("The stack is empty.");
-            stack.RemoveAt(stack.Count - 1);
+            top--;
         }
         public T Peek()
         {
             if (IsEmpty())
                 throw new InvalidOperationException("The stack is empty.");
-            return stack[^1];
+            return stack[top-1];
         }
         public bool IsEmpty()
         {
-            return stack.Count == 0; 
+            return top==0; 
+        }
+        public bool IsFull()
+        {
+            return top == stack.Length;
         }
     }
 }
